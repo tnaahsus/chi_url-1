@@ -40,7 +40,7 @@ class UserInDB(User):
     hashed_password: str
 
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="get_token")
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
